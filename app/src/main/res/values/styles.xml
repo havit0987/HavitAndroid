@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyCustomTabLayout" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+    </style>
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="colorPrimary">@color/black</item>
+    </style>
+</resources>

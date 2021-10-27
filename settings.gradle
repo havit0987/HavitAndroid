@@ -1,0 +1,2 @@
+rootProject.name = "Samplehavit"
+include ':app'
