@@ -59,10 +59,24 @@ public class MainActivity extends AppCompatActivity
             onFragmentSelected(0, null);
         } else if (id == R.id.menu2) {
             Toast.makeText(this, "두번째 메뉴 선택됨.", Toast.LENGTH_LONG).show();
-            onFragmentSelected(1, null);
+
+            Intent intent =  new Intent(this,InformationActivity.class);
+            startActivity(intent);
         } else if (id == R.id.menu3) {
             Toast.makeText(this, "세번째 메뉴 선택됨.", Toast.LENGTH_LONG).show();
-            onFragmentSelected(2, null);
+
+            Intent bintent =  new Intent(this,BasketActivity.class);
+            startActivity(bintent);
+        } else if (id == R.id.login) {
+            Toast.makeText(this, "네번째 메뉴 선택됨.", Toast.LENGTH_LONG).show();
+
+            Intent iintent =  new Intent(this,SignInActivity.class);
+            startActivity(iintent);
+        }else if (id == R.id.singup) {
+            Toast.makeText(this, "네번째 메뉴 선택됨.", Toast.LENGTH_LONG).show();
+
+            Intent uintent =  new Intent(this,SignUpActivity.class);
+            startActivity(uintent);
         }
 
         drawer.closeDrawer(GravityCompat.START);
@@ -97,7 +111,6 @@ public class MainActivity extends AppCompatActivity
         fragment2 = new Fragment2();
         fragment3 = new Fragment3();
         fragment4 = new Fragment4();
-        fragment5 = new Fragment5();
 
 
 
@@ -110,7 +123,6 @@ public class MainActivity extends AppCompatActivity
         tabs.addTab(tabs.newTab().setText("Devices"));
         tabs.addTab(tabs.newTab().setText("Pods"));
         tabs.addTab(tabs.newTab().setText("Accessories"));
-        tabs.addTab(tabs.newTab().setText("Deals"));
         tabs.addTab(tabs.newTab().setText("Support"));
         tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -127,8 +139,6 @@ public class MainActivity extends AppCompatActivity
                     selected = fragment3;
                 } else if (position == 3) {
                     selected = fragment4;
-                } else if (position == 4) {
-                    selected = fragment5;
                 }
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.container, selected).commit();

@@ -17,5 +17,16 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
     </group>
+    <item android:title=""
+        android:checkableBehavior="single">
+        <menu>
+            <item
+                android:id="@+id/login"
+                android:title="LOGIN"/>
+            <item
+                android:id="@+id/singup"
+                android:title="SIGN UP"/>
+        </menu>
+    </item>
 
 </menu>
