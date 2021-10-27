@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.menu1) {
-            Toast.makeText(this, "첫번째 메뉴 선택됨.", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "첫번째 메뉴 선택됨.kkkkkkkkkk", Toast.LENGTH_LONG).show();
             onFragmentSelected(0, null);
         } else if (id == R.id.menu2) {
             Toast.makeText(this, "두번째 메뉴 선택됨.", Toast.LENGTH_LONG).show();
