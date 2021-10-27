@@ -17,7 +17,7 @@ public class Fragment1 extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment1,container,false);
 
-        button = view.findViewById(R.id.T2button);
+        button = view.findViewById(R.id.T1button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

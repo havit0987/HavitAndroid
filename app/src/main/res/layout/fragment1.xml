@@ -35,18 +35,12 @@
                     android:id="@+id/T1button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="T1 More"
+                    android:layout_gravity="bottom|right"
+                    android:background="#00ff0000"
+                    android:text="More →"
                     android:textAllCaps="false"
-                    app:backgroundTint="#9E9E9E" />
+                    app:backgroundTint="#FFFFFF" />
 
-                <Button
-                    android:id="@+id/T2button"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:text="T2 More"
-                    android:textAllCaps="false"
-                    app:backgroundTint="#9E9E9E" />
             </FrameLayout>
 
             <FrameLayout
@@ -63,9 +57,11 @@
                     android:id="@+id/V1button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="V1 More"
+                    android:layout_gravity="bottom|right"
+                    android:background="#00ff0000"
+                    android:text="More →"
                     android:textAllCaps="false"
-                    app:backgroundTint="#9E9E9E" />
+                    app:backgroundTint="#FFFFFF" />
             </FrameLayout>
 
 
