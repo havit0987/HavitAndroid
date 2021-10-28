@@ -181,6 +181,9 @@ public class MainActivity extends AppCompatActivity
         }else if (position ==2){
             curFragment=fragment3;
          //   toolbar.setTitle("세 번째화면");
+        }else if (position ==3){
+            curFragment=fragment4;
+            //   toolbar.setTitle("세 번째화면");
         }
         getSupportFragmentManager().beginTransaction().replace(R.id.container, curFragment).commit();
     }
