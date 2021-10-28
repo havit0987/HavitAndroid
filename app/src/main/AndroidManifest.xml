@@ -26,6 +26,8 @@
         <activity android:name=".BasketActivity"></activity>
         <activity android:name=".SignInActivity"></activity>
         <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".CapDetail"></activity>
+        <activity android:name=".MugDetail"></activity>
 
 
     </application>

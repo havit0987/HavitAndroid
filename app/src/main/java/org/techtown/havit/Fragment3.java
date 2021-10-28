@@ -23,6 +23,10 @@ public class Fragment3 extends Fragment {
         View view = inflater.inflate(R.layout.fragment3,container,false);
 
         capbutton = view.findViewById(R.id.capbutton);
+        mugbutton = view.findViewById(R.id.mugbutton);
+        BTbutton = view.findViewById(R.id.BTbutton);
+        WTbutton = view.findViewById(R.id.WTbutton);
+
         capbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,6 +35,17 @@ public class Fragment3 extends Fragment {
             }
 
         });
+
+        mugbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),MugDetail.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
+
+
     }
 }
