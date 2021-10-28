@@ -30,23 +30,81 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/blackhat" />
+
+                <Button
+                    android:id="@+id/capbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:background="#00FFFFFF"
+                    android:text="More →"
+                    android:textColor="#000000"
+                    app:backgroundTint="#FFFFFF" />
+
             </FrameLayout>
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/cup" />
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/blackt" />
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/whitet" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/cup" />
+
+                <Button
+                    android:id="@+id/mugbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:background="#00FFFFFF"
+                    android:text="More →"
+                    android:textColor="#000000"
+                    app:backgroundTint="#FFFFFF" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/blackt" />
+
+                <Button
+                    android:id="@+id/BTbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:background="#00FFFFFF"
+                    android:text="More →"
+                    android:textColor="#000000"
+                    app:backgroundTint="#FFFFFF" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/whitet" />
+
+                <Button
+                    android:id="@+id/WTbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:background="#00FFFFFF"
+                    android:text="More →"
+                    android:textColor="#000000"
+                    app:backgroundTint="#FFFFFF" />
+            </FrameLayout>
 
 
         </LinearLayout>
