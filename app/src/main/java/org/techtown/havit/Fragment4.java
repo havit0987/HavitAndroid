@@ -1,6 +1,7 @@
 package org.techtown.havit;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,6 +35,15 @@ public class Fragment4 extends Fragment {
         imageView=view.findViewById(R.id.imageView2);
 
 
+        pnum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent cintent = new Intent();
+                cintent.setAction(Intent.ACTION_DIAL);
+                cintent.setData(Uri.parse("tel:"+pnum.getText().toString()));
+                startActivity(cintent);
+            }
+        });
 
         chips.setOnClickListener(new View.OnClickListener() {
             @Override
