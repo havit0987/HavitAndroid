@@ -43,6 +43,20 @@ public class Fragment3 extends Fragment {
                 startActivity(intent);
             }
         });
+        BTbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),BTDetail.class);
+                startActivity(intent);
+            }
+        });
+        WTbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),WTDetail.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
 
