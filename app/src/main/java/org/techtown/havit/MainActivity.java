@@ -55,25 +55,20 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.menu1) {
-            Toast.makeText(this, "첫번째 메뉴 선택됨.kkkkkkkkk", Toast.LENGTH_LONG).show();
             onFragmentSelected(0, null);
         } else if (id == R.id.menu2) {
-            Toast.makeText(this, "두번째 메뉴 선택됨.", Toast.LENGTH_LONG).show();
 
             Intent intent =  new Intent(this,InformationActivity.class);
             startActivity(intent);
         } else if (id == R.id.menu3) {
-            Toast.makeText(this, "세번째 메뉴 선택됨.", Toast.LENGTH_LONG).show();
 
             Intent bintent =  new Intent(this,BasketActivity.class);
             startActivity(bintent);
         } else if (id == R.id.login) {
-            Toast.makeText(this, "네번째 메뉴 선택됨.", Toast.LENGTH_LONG).show();
 
             Intent iintent =  new Intent(this,SignInActivity.class);
             startActivity(iintent);
         }else if (id == R.id.singup) {
-            Toast.makeText(this, "네번째 메뉴 선택됨.", Toast.LENGTH_LONG).show();
 
             Intent uintent =  new Intent(this,SignUpActivity.class);
             startActivity(uintent);
