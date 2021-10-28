@@ -1,8 +1,10 @@
 package org.techtown.havit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -29,7 +31,7 @@ public class BasketActivity extends AppCompatActivity
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-///////////////////////////////////
+
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayShowTitleEnabled(false);
 
@@ -98,34 +100,57 @@ public class BasketActivity extends AppCompatActivity
         if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
             drawerLayout.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            Intent hintent = new Intent(this,MainActivity.class);
+            hintent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            hintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            hintent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // 지나쳐온 액티비티삭제.
+            startActivity(hintent);
         }
+
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
+        int id = item.getItemId();
 
-          /*  case R.id.item_about: {
-                Intent pintent = new Intent(this, AboutActivity.class);
-                startActivity(pintent);
-                break;
-            }
+        if (id == R.id.menu1) {
 
-            case R.id.item_product: {
-                Intent pintent = new Intent(this, ProductActivity.class);
-                startActivity(pintent);
-                break;
-            }
-            case R.id.item_contact: {
-                Intent lintent = new Intent(this, ContactActivity.class);
-                startActivity(lintent);
-                break;
-            }*/
+            Intent hintent = new Intent(this,MainActivity.class);
+            hintent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            hintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            hintent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // 지나쳐온 액티비티삭제.
+            startActivity(hintent);
+
+        } else if (id == R.id.menu2) {
+
+            Intent intent =  new Intent(this,InformationActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+
+        } else if (id == R.id.menu3) {
+
+
+        } else if (id == R.id.login) {
+
+            Intent iintent =  new Intent(this,SignInActivity.class);
+            iintent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            iintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(iintent);
+
+        }else if (id == R.id.singup) {
+
+            Intent uintent =  new Intent(this,SignUpActivity.class);
+            uintent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            uintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(uintent);
         }
+
+
 
         return true;
     }
+
 
 }
 
