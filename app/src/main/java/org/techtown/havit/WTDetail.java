@@ -20,7 +20,7 @@ public class WTDetail extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);//툴바 타이틀 없애기
         toolbar1.setTitle("");
         toolbar1.setSubtitle("");
-
+/////
 
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
