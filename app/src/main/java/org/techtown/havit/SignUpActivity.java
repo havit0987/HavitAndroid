@@ -66,6 +66,8 @@ public class SignUpActivity extends Activity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 Intent registerIntent = new Intent(SignUpActivity.this, MainActivity.class);
+                                registerIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);  // 지나온 액티비티 삭제
+                                registerIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                 SignUpActivity.this.startActivity(registerIntent);
                             }
                         })
