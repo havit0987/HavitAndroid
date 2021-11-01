@@ -56,7 +56,7 @@ public class SignUpActivity extends Activity {
         pw.setText(pww);
 
  */
-
+/*
         signbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,6 +74,51 @@ public class SignUpActivity extends Activity {
                         .create();
                 dialog.show();
             }
+        });
+*/
+
+        signbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
+
+                builder.setTitle("HAVIT").setMessage("이대로 가입을 진행하시겠습니까?");
+
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener(){
+                    @Override
+                    public void onClick(DialogInterface dialog, int id)
+                    {
+                        AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
+                        AlertDialog adialog = builder.setMessage("가입이 완료되었습니다.")
+                                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent registerIntent = new Intent(SignUpActivity.this, MainActivity.class);
+                                        registerIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);  // 지나온 액티비티 삭제
+                                        registerIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                        SignUpActivity.this.startActivity(registerIntent);
+                                    }
+                                })
+                                .create();
+                        adialog.show();
+
+                    }
+                });
+
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener(){
+                    @Override
+                    public void onClick(DialogInterface dialog, int id)
+                    {
+
+                    }
+                });
+
+
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+            }
+
+
         });
 
     }
