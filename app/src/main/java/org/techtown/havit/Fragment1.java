@@ -10,7 +10,7 @@ import android.widget.Button;
 import androidx.fragment.app.Fragment;
 
 public class Fragment1 extends Fragment {
-    private Button button;
+    private Button button,v1btn;
 
     @Override
     public View onCreateView(LayoutInflater inflater,ViewGroup container,Bundle savedInstanceState) {
@@ -24,6 +24,14 @@ public class Fragment1 extends Fragment {
                 Intent intent = new Intent(getActivity(),DisposableActivity.class);
                 startActivity(intent);
 
+            }
+        });
+        v1btn = view.findViewById(R.id.V1button);
+        v1btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),RechargeableDetailActivity.class);
+                startActivity(intent);
             }
         });
         return view;

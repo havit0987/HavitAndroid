@@ -22,6 +22,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 
@@ -150,8 +151,24 @@ public class MainActivity extends AppCompatActivity
         });
 
 
-
-
+        BottomNavigationView bottomNavigationView= findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.tab1:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment1).commit() ;
+                        return true;
+                    case R.id.tab2:
+                        Intent bintent =  new Intent(MainActivity.this,BasketActivity.class);
+                        startActivity(bintent);
+                        return true;
+                    case R.id.tab3:
+                        return true;
+                }
+                return false;
+                }
+        });
     }
 
     @Override
@@ -177,7 +194,7 @@ public class MainActivity extends AppCompatActivity
 
         }else if (position == 1){
             curFragment=fragment2;
-           // toolbar.setTitle("두 번째 화면");
+          // toolbar.setTitle("두 번째 화면");
         }else if (position ==2){
             curFragment=fragment3;
          //   toolbar.setTitle("세 번째화면");
