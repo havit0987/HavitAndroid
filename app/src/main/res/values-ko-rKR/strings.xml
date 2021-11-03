@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Samplehavit</string>
+    <string name="menu_home">홈</string>
+    <string name="menu_information">정보</string>
+    <string name="menu_basket">장바구니</string>
+    <string name="action_settings">설정</string>
+    <string name="nav_header_desc">네비게이션 헤더</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">안드로이드 스튜디오</string>
+    <string name="navigation_drawer_close">네비게이션 드로어 닫기</string>
+    <string name="navigation_drawer_open">네비게이션 드로어 열기</string>
+    <string name="havit_title">HAVIT</string>
+    <string name="item1_bts">블랙 그래피티 티셔츠</string>
+    <string name="item1_color">블랙</string>
+    <string name="item_box">구성품</string>
+    <string name="color">색상</string>
+    <string name="item1_box">HAVIT 티셔츠 1개입</string>
+    <string name="button_add_cart">장바구니</string>
+    <string name="button_buy">구매</string>
+    <string name="item3_cap">블랙 자수 볼캡</string>
+    <string name="item3_color">블랙</string>
+    <string name="item3_box">HAVIT 볼캡 1개입</string>
+    <string name="t1">HAVIT T1</string>
+    <string name="t1_color">다양한 컬러</string>
+    <string name="t1_box">일회용 T1 디바이스 1개입</string>
+    <string name="t2">HAVIT T2</string>
+    <string name="t2_color">다양한 컬러</string>
+    <string name="t2_box">일회용 T2 디바이스 1개입</string>
+    <string name="item4_mug">화이트 로고 머그</string>
+    <string name="item4_color">화이트</string>
+    <string name="item4_box">머그 1개입</string>
+    <string name="signIn">로그인</string>
+    <string name="signUp">회원가입</string>
+    <string name="logOut">로그아웃</string>
+    <string name="item2_wts">화이트 CT 티셔츠</string>
+    <string name="item2_color">화이트</string>
+    <string name="item2_box">HAVIT 티셔츠 1개입</string>
+    <string name="delete">삭제</string>
+    <string name="more">더보기</string>
+    <string name="guest">비회원</string>
+</resources>
