@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Samplehavit">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDm5sKHhKev5-8uH2SEv1Y1vaPEyTNT5ao"/>
         <activity
             android:name=".MainActivity"
             android:label="Samplehavit"
