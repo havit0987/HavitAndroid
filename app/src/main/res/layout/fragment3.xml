@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|right"
                     android:background="#00FFFFFF"
-                    android:text="More →"
+                    android:text="@string/more"
                     android:textColor="#000000"
                     app:backgroundTint="#FFFFFF" />
 
@@ -59,7 +59,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|right"
                     android:background="#00FFFFFF"
-                    android:text="More →"
+                    android:text="@string/more"
                     android:textColor="#000000"
                     app:backgroundTint="#FFFFFF" />
             </FrameLayout>
@@ -80,7 +80,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|right"
                     android:background="#00FFFFFF"
-                    android:text="More →"
+                    android:text="@string/more"
                     android:textColor="#000000"
                     app:backgroundTint="#FFFFFF" />
             </FrameLayout>
@@ -101,7 +101,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom|right"
                     android:background="#00FFFFFF"
-                    android:text="More →"
+                    android:text="@string/more"
                     android:textColor="#000000"
                     app:backgroundTint="#FFFFFF" />
             </FrameLayout>

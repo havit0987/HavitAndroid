@@ -37,6 +37,15 @@
     <string name="item2_color">WHITE</string>
     <string name="item2_box">1 HAVIT T-shirts</string>
     <string name="delete">DELETE</string>
-    <string name="more">MORE</string>
+    <string name="more">MORE→</string>
     <string name="guest">GUEST</string>
+    <string name="id">ID</string>
+    <string name="password">PASSWORD</string>
+    <string name="passCheck">PASSWORD CHECK</string>
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="tab_device">Device</string>
+    <string name="tab_pods">Pods</string>
+    <string name="tab_accessories">Accessories</string>
+    <string name="tab_support">Support</string>
 </resources>

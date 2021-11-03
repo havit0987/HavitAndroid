@@ -60,7 +60,7 @@
                         android:id="@+id/textView5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="  HAVIT T2 "
+                        android:text="@string/t2"
                         android:textColor="@color/black"
                         android:textSize="24sp"
                         android:textStyle="bold" />
@@ -79,7 +79,7 @@
                             android:paddingTop="20dp"
                             android:paddingRight="20dp"
                             android:paddingBottom="20dp"
-                            android:text="COLOR"
+                            android:text="@string/color"
                             android:textColor="#444444"
                             android:textSize="16sp" />
 
@@ -89,7 +89,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:text="Various Color Available"
+                            android:text="@string/t2_color"
                             android:textColor="#444444" />
                     </LinearLayout>
 
@@ -105,7 +105,7 @@
                             android:gravity="left"
                             android:padding="20dp"
 
-                            android:text="IN THE BOX"
+                            android:text="@string/item_box"
                             android:textColor="#444444" />
 
                         <TextView
@@ -115,7 +115,7 @@
                             android:layout_weight="1"
                             android:gravity="center"
 
-                            android:text="1 HAVIT T2 Disposable Device"
+                            android:text="@string/t2_box"
                             android:textColor="#444444" />
 
                     </LinearLayout>
@@ -141,7 +141,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="20dp"
                             android:layout_weight="1"
-                            android:text="ADD CART"
+                            android:text="@string/button_add_cart"
                             app:backgroundTint="#BCC2C5" />
 
                         <Button
@@ -150,7 +150,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="20dp"
                             android:layout_weight="1"
-                            android:text="BUY"
+                            android:text="@string/button_buy"
                             app:backgroundTint="#BCC2C5" />
                     </LinearLayout>
 

@@ -39,4 +39,13 @@
     <string name="delete">삭제</string>
     <string name="more">더보기</string>
     <string name="guest">비회원</string>
+    <string name="id">아이디</string>
+    <string name="password">비밀번호</string>
+    <string name="passCheck">패스워드 체크</string>
+    <string name="name">이름</string>
+    <string name="email">이메일</string>
+    <string name="tab_device">디바이스</string>
+    <string name="tab_pods">팟</string>
+    <string name="tab_accessories">악세서리</string>
+    <string name="tab_support">지원</string>
 </resources>
