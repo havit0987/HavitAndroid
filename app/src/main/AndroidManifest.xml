@@ -30,6 +30,7 @@
         <activity android:name=".MugDetail"></activity>
         <activity android:name=".BTDetail"></activity>
         <activity android:name=".WTDetail"></activity>
+        <activity android:name="RechargeableDetailActivity"></activity>
 
     </application>
 
