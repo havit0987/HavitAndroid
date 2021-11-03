@@ -26,9 +26,9 @@ import com.google.android.material.chip.Chip;
 public class Fragment4 extends Fragment implements OnMapReadyCallback {
     //private GoogleMap mMap;
     private MapView mapView = null;
-   private Chip sunship, busanchip, seoulchip;
+    private Chip sunship, busanchip, seoulchip;
     ImageView imageView;
-   private TextView maintext, addreestext, numbertext;
+    private TextView maintext, addreestext, numbertext;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -127,38 +127,40 @@ public class Fragment4 extends Fragment implements OnMapReadyCallback {
 
         markerOptions.snippet("순천점");
 
+        CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(SEOUL).zoom(18).build();
+        googleMap.moveCamera(CameraUpdateFactory
+                .newCameraPosition(cameraPosition));
         googleMap.addMarker(markerOptions);
 
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
 
-        googleMap.animateCamera(CameraUpdateFactory.zoomTo(18));
 
 
 
 
         seoulchip.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            LatLng SEOUL = new LatLng(37.527331, 127.027352);
+            @Override
+            public void onClick(View v) {
+                LatLng SEOUL = new LatLng(37.527331, 127.027352);
 
-            MarkerOptions markerOptions = new MarkerOptions();
+                MarkerOptions markerOptions = new MarkerOptions();
 
-            markerOptions.position(SEOUL);
+                markerOptions.position(SEOUL);
 
-            markerOptions.title("HAVIT");
+                markerOptions.title("HAVIT");
 
-            markerOptions.snippet("서울점");
+                markerOptions.snippet("서울점");
 
-            googleMap.addMarker(markerOptions);
+                googleMap.addMarker(markerOptions);
 
-            googleMap.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
+                googleMap.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
 
-            googleMap.animateCamera(CameraUpdateFactory.zoomTo(18));
-            maintext.setText("HAVIT 서울점");
-            addreestext.setText("서울특별시 강남구 압구정로165");
-            numbertext.setText("02-547-2233");
+                googleMap.animateCamera(CameraUpdateFactory.zoomTo(18));
+                maintext.setText("HAVIT 서울점");
+                addreestext.setText("서울특별시 강남구 압구정로165");
+                numbertext.setText("02-547-2233");
 
-        }
+            }
         });
         busanchip.setOnClickListener(new View.OnClickListener() {
             @Override

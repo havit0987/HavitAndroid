@@ -4,91 +4,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/map"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
-    <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="409dp"
-            android:layout_height="598dp"
-            android:orientation="vertical"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="132dp">
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp">
 
-            <com.google.android.material.chip.ChipGroup
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipsuncheon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="50dp">
+                android:text="순천점"
+                android:textSize="20dp" />
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chipsuncheon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="순천점"
-                    android:textSize="20dp" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chipbusan"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="부산점"
-                    android:textSize="20dp" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/seoulchip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:text="서울점"
-                    android:textSize="20dp" />
-
-            </com.google.android.material.chip.ChipGroup>
-
-
-            <com.google.android.gms.maps.MapView
-                android:id="@+id/mapView"
-                android:layout_width="match_parent"
-                android:layout_height="419dp" />
-
-            <TextView
-                android:id="@+id/pname"
-                android:layout_width="match_parent"
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipbusan"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="15dp"
-                android:text="HAVIT 순천점"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:layout_marginLeft="20dp"
+                android:text="부산점"
+                android:textSize="20dp" />
 
-            <TextView
-                android:id="@+id/paddress"
-                android:layout_width="match_parent"
+            <com.google.android.material.chip.Chip
+                android:id="@+id/seoulchip"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="서울점"
+                android:textSize="20dp" />
 
-                android:text="전남 순천시 팔마3길 11"
-                android:textSize="16sp" />
+        </com.google.android.material.chip.ChipGroup>
 
-            <TextView
-                android:id="@+id/pnum"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginBottom="20dp"
-                android:text="0507-1437-5707"
-                android:textSize="16sp" />/>
-        </LinearLayout>
-    </ScrollView>
+
+        <TextView
+            android:id="@+id/pname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="HAVIT 순천점"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/paddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="전남 순천시 팔마3길 11"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/pnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="0507-1437-5707"
+            android:textSize="16sp" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+
+            android:layout_gravity="center"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        />
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
