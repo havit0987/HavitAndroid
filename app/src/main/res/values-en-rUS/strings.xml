@@ -48,4 +48,5 @@
     <string name="tab_pods">Pods</string>
     <string name="tab_accessories">Accessories</string>
     <string name="tab_support">Support</string>
+    <string name="settingtitle">SETTING</string>
 </resources>

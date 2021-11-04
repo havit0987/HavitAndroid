@@ -48,4 +48,5 @@
     <string name="tab_pods">팟</string>
     <string name="tab_accessories">악세서리</string>
     <string name="tab_support">지원</string>
+    <string name="settingtitle">설정</string>
 </resources>

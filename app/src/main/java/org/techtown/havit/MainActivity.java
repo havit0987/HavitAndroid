@@ -7,12 +7,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -25,6 +30,8 @@ import android.widget.Toast;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity
             implements NavigationView.OnNavigationItemSelectedListener, FragmentCallback{
@@ -39,6 +46,7 @@ public class MainActivity extends AppCompatActivity
     DrawerLayout drawer;
     SearchView searchView;
     ViewPager viewPager;
+    private Locale locale2;
 
 
 
@@ -87,6 +95,14 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+/*
+       Locale locale2 = new Locale("en");
+        Configuration config2 = new Configuration();
+
+        config2.locale = locale2;
+        getResources().updateConfiguration(config2,getResources().getDisplayMetrics());
+*/
+
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -107,6 +123,7 @@ public class MainActivity extends AppCompatActivity
         fragment2 = new Fragment2();
         fragment3 = new Fragment3();
         fragment4 = new Fragment4();
+        fragment5 = new Fragment5();
 
 
 
@@ -155,15 +172,38 @@ public class MainActivity extends AppCompatActivity
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                Fragment curFragment = null;
                 switch (item.getItemId()){
                     case R.id.tab1:
                         getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment1).commit() ;
                         return true;
                     case R.id.tab2:
-                        Intent bintent =  new Intent(MainActivity.this,BasketActivity.class);
-                        startActivity(bintent);
+
+                    /*    Intent bintent =  new Intent(MainActivity.this,BasketActivity.class);
+                        startActivity(bintent);*/
+                        Locale locale2 = new Locale("ko");
+                        Locale.setDefault(locale2);
+                        Configuration config2 = new Configuration();
+
+                        config2.locale = locale2;
+                        //getBaseContext().getResources().updateConfiguration(config2,getBaseContext().getResources().getDisplayMetrics());
+                        getResources().updateConfiguration(config2,getResources().getDisplayMetrics());
+                       // Intent intent = getBaseContext().getPackageManager().getLaunchIntentForPackage(getBaseContext().getPackageName());
+                        Intent intent = getPackageManager().getLaunchIntentForPackage(getPackageName());
+
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+
+                        startActivity(intent);
+
+
+
+
+
                         return true;
                     case R.id.tab3:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment5).commit() ;
                         return true;
                 }
                 return false;
@@ -202,5 +242,12 @@ public class MainActivity extends AppCompatActivity
         getSupportFragmentManager().beginTransaction().replace(R.id.container, curFragment).commit();
     }
 
-
+    private void restart(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        Intent intent = packageManager.getLaunchIntentForPackage(context.getPackageName());
+        ComponentName componentName = intent.getComponent();
+        Intent mainIntent = Intent.makeRestartActivityTask(componentName);
+        context.startActivity(mainIntent);
+        Runtime.getRuntime().exit(0);
+    }
 }
