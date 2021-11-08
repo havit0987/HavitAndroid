@@ -29,6 +29,7 @@ public class Fragment4 extends Fragment implements OnMapReadyCallback {
     private Chip sunship, busanchip, seoulchip;
     ImageView imageView;
     private TextView maintext, addreestext, numbertext;
+    private String bb;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -141,6 +142,8 @@ public class Fragment4 extends Fragment implements OnMapReadyCallback {
         seoulchip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                bb = getResources().getString(R.string.seoul);
+
                 LatLng SEOUL = new LatLng(37.527331, 127.027352);
 
                 MarkerOptions markerOptions = new MarkerOptions();
@@ -156,15 +159,16 @@ public class Fragment4 extends Fragment implements OnMapReadyCallback {
                 googleMap.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
 
                 googleMap.animateCamera(CameraUpdateFactory.zoomTo(18));
-                maintext.setText("HAVIT 서울점");
-                addreestext.setText("서울특별시 강남구 압구정로165");
-                numbertext.setText("02-547-2233");
+                maintext.setText("HAVIT"+bb);
+                addreestext.setText(R.string.seoul_address);
+                numbertext.setText(R.string.seoul_num);
 
             }
         });
         busanchip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                bb = getResources().getString(R.string.busan);
 
                 LatLng SEOUL = new LatLng(35.165782, 129.131344);
 
@@ -181,14 +185,16 @@ public class Fragment4 extends Fragment implements OnMapReadyCallback {
                 googleMap.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
 
                 googleMap.animateCamera(CameraUpdateFactory.zoomTo(18));
-                maintext.setText("HAVIT 부산점");
-                addreestext.setText("부산광역시 해운대구 센텀1로 28");
-                numbertext.setText("051-000-0000");
+                maintext.setText("HAVIT"+bb);
+                addreestext.setText(R.string.busan_address);
+                numbertext.setText(R.string.busan_num);
             }
         });
         sunship.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                bb = getResources().getString(R.string.suncheon);
+
                 LatLng SEOUL = new LatLng(34.934207, 127.516644);
 
                 MarkerOptions markerOptions = new MarkerOptions();
@@ -204,9 +210,9 @@ public class Fragment4 extends Fragment implements OnMapReadyCallback {
                 googleMap.moveCamera(CameraUpdateFactory.newLatLng(SEOUL));
 
                 googleMap.animateCamera(CameraUpdateFactory.zoomTo(18));
-                maintext.setText("HAVIT 순천점");
-                addreestext.setText("전남 순천시 팔마3길 11");
-                numbertext.setText("0507-1437-5707");
+                maintext.setText("HAVIT"+bb);
+                addreestext.setText(R.string.suncheon_address);
+                numbertext.setText(R.string.suncheon_num);
 
             }
         });

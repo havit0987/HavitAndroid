@@ -49,4 +49,21 @@
     <string name="tab_accessories">Accessories</string>
     <string name="tab_support">Support</string>
     <string name="settingtitle">SETTING</string>
+    <string name="language">Language</string>
+    <string name="korean">Korean</string>
+    <string name="english">English</string>
+    <string name="cancle">CANCLE</string>
+    <string name="ok">OK</string>
+    <string name="suncheon">Suncheon</string>
+    <string name="busan">Busan</string>
+    <string name="seoul">Seoul</string>
+    <string name="suncheon_address">11, Palma 3-gil, Suncheon-si, Jeollanam-do, Republic of Korea</string>
+    <string name="suncheon_num">0507-1437-5707</string>
+    <string name="busan_address">28, Centum 1-ro, Haeundae-gu, Busan, Republic of Korea</string>
+    <string name="busan_num">051-000-0000</string>
+    <string name="seoul_address">165, Apgujeong-ro, Gangnam-gu, Seoul, Republic of Korea</string>
+    <string name="seoul_num">02-547-2233</string>
+    <string name="signUp_msg">Your account is set up.</string>
+    <string name="signUp_msg_continue">Do you want to proceed?</string>
+    <string name="button_back">Double tap to go back Home</string>
 </resources>

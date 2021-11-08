@@ -37,7 +37,7 @@
     <string name="item2_color">화이트</string>
     <string name="item2_box">HAVIT 티셔츠 1개입</string>
     <string name="delete">삭제</string>
-    <string name="more">더보기</string>
+    <string name="more">더보기→</string>
     <string name="guest">비회원</string>
     <string name="id">아이디</string>
     <string name="password">비밀번호</string>
@@ -49,4 +49,21 @@
     <string name="tab_accessories">악세서리</string>
     <string name="tab_support">지원</string>
     <string name="settingtitle">설정</string>
+    <string name="language">언어</string>
+    <string name="korean">한국어</string>
+    <string name="english">영어</string>
+    <string name="cancle">취소</string>
+    <string name="ok">확인</string>
+    <string name="suncheon">순천점</string>
+    <string name="busan">부산점</string>
+    <string name="seoul">서울점</string>
+    <string name="suncheon_address">전라남도 순천시 팔마3길 11 (연향동)</string>
+    <string name="suncheon_num">0507-1437-5707</string>
+    <string name="busan_address">부산광역시 해운대구 센텀1로 28</string>
+    <string name="busan_num">051-000-0000</string>
+    <string name="seoul_address">서울특별시 강남구 압구정로165</string>
+    <string name="seoul_num">02-547-2233</string>
+    <string name="signUp_msg">회원가입이 완료되었습니다.</string>
+    <string name="signUp_msg_continue">이대로 가입을 진행하시겠습니까?</string>
+    <string name="button_back">\\\'뒤로\\\' 버튼을 한번 더 누르시면 홈으로 이동됩니다.</string>
 </resources>

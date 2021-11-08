@@ -28,7 +28,7 @@
                 android:id="@+id/chipsuncheon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="순천점"
+                android:text="@string/suncheon"
                 android:textSize="20dp" />
 
             <com.google.android.material.chip.Chip
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="부산점"
+                android:text="@string/busan"
                 android:textSize="20dp" />
 
             <com.google.android.material.chip.Chip
@@ -44,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="서울점"
+                android:text="@string/seoul"
                 android:textSize="20dp" />
 
         </com.google.android.material.chip.ChipGroup>
@@ -58,7 +58,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="15dp"
-            android:text="HAVIT 순천점"
+            android:text="@string/suncheon"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginBottom="10dp"
-            android:text="전남 순천시 팔마3길 11"
+            android:text="@string/suncheon_address"
             android:textSize="16sp" />
 
         <TextView
