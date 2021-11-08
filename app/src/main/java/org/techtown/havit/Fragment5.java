@@ -22,14 +22,19 @@ import java.util.Locale;
 public class Fragment5 extends Fragment {
     Button localenbtn, localkobtn;
     PackageManager pm;
-    String[] items = {"언어설정","한국어","영어"};
+    String str,str1,str2;
     TextView textView;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment5, container, false);
 
+        String str = getResources().getString(R.string.language);
+        String str1= getResources().getString(R.string.korean);
+        String str2 = getResources().getString(R.string.english);
         Spinner spinner = view.findViewById(R.id.spinner);
+        String [] items = {str,str1,str2};
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_spinner_item,items);
                                                                 //fragment에서는 this 에 .getActivity 를 붙여야한다.
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -40,11 +45,11 @@ public class Fragment5 extends Fragment {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 0){
-                    textView.setText("언어설정");
+
                 }
 
                 else if (position == 1){
-                    textView.setText("한국어");
+
                     Locale locale2 = new Locale("ko"); // 한국어 변경법
                     Locale.setDefault(locale2);
                     Configuration config2 = new Configuration();
@@ -57,10 +62,9 @@ public class Fragment5 extends Fragment {
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
                     startActivity(intent);
-
                 }
                 else if(position ==2){
-                    textView.setText("영어");
+
                     Locale locale2 = new Locale("en"); // 언어 변경법
                     Locale.setDefault(locale2);
                     Configuration config2 = new Configuration();
