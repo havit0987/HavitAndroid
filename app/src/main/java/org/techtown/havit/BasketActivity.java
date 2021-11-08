@@ -67,10 +67,10 @@ public class BasketActivity extends AppCompatActivity
     private void dataSetting(){
 
         MyAdapter mMyAdapter = new MyAdapter();
-        mMyAdapter.addItem(ContextCompat.getDrawable(getApplicationContext(), R.drawable.rechargerble_1),"HAVIT V1","67,000원");
-        mMyAdapter.addItem(ContextCompat.getDrawable(getApplicationContext(), R.drawable.rechargerble_2),"HAVIT V2","67,000원");
-        mMyAdapter.addItem(ContextCompat.getDrawable(getApplicationContext(), R.drawable.disposable_1),"HAVIT T1","19,500원");
-        mMyAdapter.addItem(ContextCompat.getDrawable(getApplicationContext(), R.drawable.disposable_2),"HAVIT T2","38,500원");
+        mMyAdapter.addItem(ContextCompat.getDrawable(getApplicationContext(), R.drawable.rechargerble_1),"HAVIT V1","￦67,000");
+        mMyAdapter.addItem(ContextCompat.getDrawable(getApplicationContext(), R.drawable.rechargerble_2),"HAVIT V2","￦67,000");
+        mMyAdapter.addItem(ContextCompat.getDrawable(getApplicationContext(), R.drawable.disposable_1),"HAVIT T1","￦19,500");
+        mMyAdapter.addItem(ContextCompat.getDrawable(getApplicationContext(), R.drawable.disposable_2),"HAVIT T2","￦38,500");
 
 
 
