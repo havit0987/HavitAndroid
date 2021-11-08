@@ -31,7 +31,7 @@ public class Fragment5 extends Fragment {
 
         Spinner spinner = view.findViewById(R.id.spinner);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_spinner_item,items);
-
+                                                                //fragment에서는 this 에 .getActivity 를 붙여야한다.
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         textView = view.findViewById(R.id.textView4);
         spinner.setAdapter(adapter);
