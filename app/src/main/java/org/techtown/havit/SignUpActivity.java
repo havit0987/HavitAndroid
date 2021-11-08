@@ -42,6 +42,7 @@ public class SignUpActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
+
         id = findViewById(R.id.editTextTextPersonName5);
         pw = findViewById(R.id.editTextTextPersonName4);
         signbtn = findViewById(R.id.SignupBtn);

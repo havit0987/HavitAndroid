@@ -179,24 +179,8 @@ public class MainActivity extends AppCompatActivity
                         return true;
                     case R.id.tab2:
 
-                    /*    Intent bintent =  new Intent(MainActivity.this,BasketActivity.class);
-                        startActivity(bintent);*/
-                        Locale locale2 = new Locale("ko");
-                        Locale.setDefault(locale2);
-                        Configuration config2 = new Configuration();
-
-                        config2.locale = locale2;
-                        //getBaseContext().getResources().updateConfiguration(config2,getBaseContext().getResources().getDisplayMetrics());
-                        getResources().updateConfiguration(config2,getResources().getDisplayMetrics());
-                       // Intent intent = getBaseContext().getPackageManager().getLaunchIntentForPackage(getBaseContext().getPackageName());
-                        Intent intent = getPackageManager().getLaunchIntentForPackage(getPackageName());
-
-                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-
-
-                        startActivity(intent);
-
+                        Intent bintent =  new Intent(MainActivity.this,BasketActivity.class);
+                        startActivity(bintent);
 
 
 
