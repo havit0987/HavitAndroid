@@ -29,7 +29,7 @@ public class SignInActivity extends AppCompatActivity {
     public void onBackPressed() {
         if(System.currentTimeMillis() > backKeyPressedTime + 2000) {
             backKeyPressedTime = System.currentTimeMillis();
-            toast = Toast.makeText(this, "\'뒤로\' 버튼을 한번 더 누르시면 홈으로 이동됩니다.", Toast.LENGTH_SHORT);
+            toast = Toast.makeText(this, R.string.button_back, Toast.LENGTH_SHORT);
             toast.show();
             return;
 
