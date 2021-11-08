@@ -8,8 +8,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class SignInActivity extends Activity {
+public class SignInActivity extends AppCompatActivity {
     EditText editID,editPW;
     private long backKeyPressedTime = 0;
     private Toast toast;
