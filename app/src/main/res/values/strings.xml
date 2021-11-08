@@ -66,4 +66,5 @@
     <string name="signUp_msg">Your account is set up.</string>
     <string name="signUp_msg_continue">Do you want to proceed?</string>
     <string name="button_back">Double tap to go back Home</string>
+    <string name="dark_mode">Dark Mode</string>
 </resources>

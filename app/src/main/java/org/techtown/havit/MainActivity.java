@@ -48,6 +48,8 @@ public class MainActivity extends AppCompatActivity
     ViewPager viewPager;
     private Locale locale2;
 
+    String themeColor;
+
 
 
     @Override
@@ -193,6 +195,9 @@ public class MainActivity extends AppCompatActivity
                 return false;
                 }
         });
+
+        themeColor = ThemeUtil.modLoad(getApplicationContext());
+        ThemeUtil.applyTheme(themeColor);
     }
 
     @Override
