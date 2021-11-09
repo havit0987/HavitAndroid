@@ -24,6 +24,9 @@ public class BasketActivity extends AppCompatActivity
     Toolbar toolbar;
     DrawerLayout drawerLayout;
     NavigationView navigationView;
+
+    String themeColor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +61,8 @@ public class BasketActivity extends AppCompatActivity
         /* 아이템 추가 및 어댑터 등록 */
         dataSetting();
 
+        themeColor = ThemeUtil.modLoad(getApplicationContext());
+        ThemeUtil.applyTheme(themeColor);
 
 
 
