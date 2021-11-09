@@ -39,6 +39,7 @@
                     android:background="#00ff0000"
                     android:text="@string/more"
                     android:textAllCaps="false"
+                    android:textColor="#5E5E5E"
                     app:backgroundTint="#FFFFFF" />
 
             </FrameLayout>
@@ -61,6 +62,7 @@
                     android:background="#00ff0000"
                     android:text="@string/more"
                     android:textAllCaps="false"
+                    android:textColor="#5E5E5E"
                     app:backgroundTint="#FFFFFF" />
             </FrameLayout>
 
