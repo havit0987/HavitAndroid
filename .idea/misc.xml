@@ -3,10 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/activity_basket.xml" value="0.36614583333333334" />
         <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/activity_bts_detail.xml" value="0.36614583333333334" />
         <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/activity_cap_detail.xml" value="0.36614583333333334" />
-        <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/activity_disposable.xml" value="0.36614583333333334" />
         <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/activity_disposal_detail.xml" value="0.36614583333333334" />
         <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/activity_disposal_detail2.xml" value="0.36614583333333334" />
         <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/activity_information.xml" value="0.36614583333333334" />
@@ -16,8 +14,6 @@
         <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/activity_signup.xml" value="0.36614583333333334" />
         <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/activity_wts_detail.xml" value="0.36614583333333334" />
         <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/basket_item_list.xml" value="0.36614583333333334" />
-        <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/fragment1.xml" value="0.36614583333333334" />
-        <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/fragment3.xml" value="0.36614583333333334" />
         <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/fragment4.xml" value="0.36614583333333334" />
         <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/fragment5.xml" value="0.36614583333333334" />
         <entry key="..\:/AndroidStudioProject/Samplehavit2/app/src/main/res/layout/nav_header_main.xml" value="0.36614583333333334" />
@@ -34,6 +30,7 @@
         <entry key="..\:/Users/KOREA/AndroidStudioProjects/HavitAndroid/app/src/main/res/layout/fragment1.xml" value="0.29846014492753625" />
         <entry key="..\:/Users/KOREA/AndroidStudioProjects/HavitAndroid/app/src/main/res/layout/fragment3.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/KOREA/AndroidStudioProjects/HavitAndroid/app/src/main/res/layout/fragment4.xml" value="0.29846014492753625" />
+        <entry key="..\:/Users/KOREA/AndroidStudioProjects/HavitAndroid/app/src/main/res/layout/fragment5.xml" value="0.2046875" />
       </map>
     </option>
   </component>

@@ -4,10 +4,12 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -79,15 +81,16 @@ public class SignUpActivity extends AppCompatActivity {
         });
 */
 
+
         signbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
-
+                AlertDialog pp = builder.show();
                 builder.setTitle("HAVIT").setMessage(R.string.signUp_msg_continue);
 
 
-                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener(){
+                builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id)
                     {
@@ -104,6 +107,12 @@ public class SignUpActivity extends AppCompatActivity {
                                 })
                                 .create();
                         adialog.show();
+                        Button ppbutton = adialog.getButton(DialogInterface.BUTTON_POSITIVE);
+                        ppbutton.setTextColor(Color.parseColor("#5E5E5E"));
+                        TextView bk = (TextView)pp.findViewById(android.R.id.message);
+
+
+
 
                     }
                 });
@@ -119,6 +128,12 @@ public class SignUpActivity extends AppCompatActivity {
 
                 AlertDialog alertDialog = builder.create();
                 alertDialog.show();
+                Button pbtton = alertDialog.getButton(DialogInterface.BUTTON_POSITIVE);
+                pbtton.setTextColor(Color.parseColor("#5E5E5E"));
+                Button nbtton = alertDialog.getButton(DialogInterface.BUTTON_NEGATIVE);
+                nbtton.setTextColor(Color.parseColor("#5E5E5E"));
+
+
             }
 
 
